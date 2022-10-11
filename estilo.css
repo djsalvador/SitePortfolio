@@ -1,0 +1,37 @@
+.nomeHeader{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration-style: double;
+    text-decoration: solid;
+    color: #ffffff;
+}
+
+.background{
+    background-image: url("imagens/ecdde1ea96a7712f9556f5812c101182.jpg");  
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.imagem{
+    height: 5%;
+}
+
+.direita{
+    float: right;
+}
+
+.esquerda{
+    float: inline-start;
+}
+
+/* CALENDARIO */
+.tabela{
+    color: #ffffff;
+}
+
+.procurar{
+    border-width: 1px;
+    border-style: solid;
+    border-color:  rgb(243, 243, 245);
+    padding: 1em;
+}
+
