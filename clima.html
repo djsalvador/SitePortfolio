@@ -65,14 +65,16 @@
             <div class="row marcador align-items-center">
                 <div class="col mx-auto text-center textos">
                     <picture>
-                        <source media="(max-width:500px)"  srcset="imagens/maps-150.png" type="image/png">
-						<source media="(max-width:800px)" srcset="imagens/maps-300.png" type="image/png">
-						<source media="(max-width:1200px)" srcset="imagens/maps-500.png" type="image/png">
-						<img class="img-responsive" src="imagens/maps-500.png" alt="Imagem Flexivel">
+                        <source media="(max-width:500px)"  srcset="imagens/maps-75.png" type="image/png">
+						<source media="(max-width:800px)" srcset="imagens/maps-150.png" type="image/png">
+						<source media="(max-width:1200px)" srcset="imagens/maps-300.png" type="image/png">
+						<img class="img-responsive" src="imagens/clima.png" alt="Imagem Flexivel">
                     </picture>
-                        <p class="textos">Buscar Dados do seguinte CEP:</p>
-                        <input id="cep" type="text" placeholder="00000-000"><br>
-                        <button id="btnBusc" type="button" class="mt-2 btn btn-primary">Buscar</button>
+                        <p class="textos">Buscar Dados do Clima:</p>
+                        <p class="textos">Digite a Cidade:</p>
+
+                        <input id="cidade" type="text" placeholder="Cidade"><br>
+                        <button id="btnCid" type="button" class="mt-2 btn btn-primary">Ver clima</button>
                         <p id="error" class="text-danger"></p>
                 </div>
                 <div id="result" class="textos text-center"></div>
@@ -112,7 +114,7 @@
 		
 	<!-- JAVASCRIPT / JQUERY / POPPER do BOOTSTRAP -->
 	<script src="script.js"></script>
-    <script src="scriptCEP.js"></script>
+    <script src="scriptClima.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

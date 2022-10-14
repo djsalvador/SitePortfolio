@@ -2,7 +2,7 @@
 function converteC() {
 	let c = document.getElementById("campoTempC").value;
 	
-	let fahrenheit = (c*1.8)+32;
+	let fahrenheit = (c*(9/5))+32;
 
 	let resC = window.document.getElementById("resultC")
 	resC.innerHTML = fahrenheit.toFixed(2) + "ºF"; 
@@ -11,7 +11,7 @@ function converteC() {
 function converteF() {
 	let f = document.getElementById("campoTempF").value;
 	
-	let celsius = (f-32)/1.8;
+	let celsius = (f-32)*(5/9);
 
 	let resF = window.document.getElementById("resultF")
 	resF.innerHTML = celsius.toFixed(2) + "ºC"; 
