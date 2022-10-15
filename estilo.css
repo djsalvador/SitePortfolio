@@ -36,7 +36,12 @@
     padding: 1em;
 }
 
-/* menu Dropdown  */
+.caixas{
+  border-color: aqua;
+  border-style: double;
+}
+
+/* ========== Menu Dropdown ==========   */
 
 .dropbtn {
     background-color: #343a40;
@@ -83,3 +88,4 @@
   .dropdown:hover .dropbtn {
     background-color: #343a40;
   }
+  /* ===== ==========  ==========  ========== ===== */

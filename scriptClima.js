@@ -2,11 +2,12 @@
 const btnCid = document.getElementById('btnCid')
    
 btnCid.addEventListener('click', function () {
-    clima(document.getElementById('cidade').value)
+    document.getElementById("result").innerHTML = "";
+    clima(document.getElementById('cid').value);
 })
 
-function clima(cidade) {
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade},BR&APPID=ca7f11d79102681aa6822e5330961dc6`)
+function clima(cid) {
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cid},BR&APPID=ca7f11d79102681aa6822e5330961dc6`)
     .then((response) => {
         return response.json()
         })
@@ -22,7 +23,6 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade},BR&APPID=ca7f
         p1.appendChild(situacao);
 
         let temp = document.createTextNode(`Temperatura: ${res.main.temp}`);
-        let c = temp-
         p2.appendChild(temp);
 
         let umidade = document.createTextNode(`Umidade: ${res.main.humidity}`)
@@ -37,9 +37,8 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade},BR&APPID=ca7f
         document.getElementById('result').appendChild(p4)
     })
     .catch(error => {
-        document.getElementById('error').appendChild(document.createTextNode(error))
+        document.getElementById('error').appendChild(document.createTextNode("Algum erro aconteceu. Refaça sua busca."))
     })
   }
 
   /*===================*/
-

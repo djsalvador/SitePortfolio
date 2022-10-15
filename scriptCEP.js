@@ -2,7 +2,8 @@
 const btnBusc = document.getElementById('btnBusc')
 
 btnBusc.addEventListener('click', function () {
-  buscarCep(document.getElementById('cep').value)
+  document.getElementById("result").innerHTML = "";
+  buscarCep(document.getElementById('cep').value);
 })
 
 function buscarCep(cep) {
@@ -35,6 +36,36 @@ fetch(`https://cdn.apicep.com/file/apicep/${cep}.json`)
   document.getElementById('result').appendChild(p4)
 })
 .catch(error => {
-  document.getElementById('error').appendChild(document.createTextNode(error))
+  document.getElementById('error').appendChild(document.createTextNode("Algum erro aconteceu. Refaça sua pesquisa."))
 })
 }
+
+/* ========== MAPAS ========== */
+var geocoder;
+  var map;
+  function initialize() {
+    geocoder = new google.maps.Geocoder();
+    var latlng = new google.maps.LatLng(cep);
+    var mapOptions = {
+      zoom: 8,
+      center: latlng
+    }
+    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  }
+
+  function codeAddress() {
+    var address = document.getElementById('cep').value;
+    geocoder.geocode( { 'cep': address}, function(results, status) {
+      if (status == 'OK') {
+        map.setCenter(results[0].geometry.location);
+        var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+        });
+      } else {
+        alert('Geocode was not successful for the following reason: ' + status);
+      }
+    });
+  }
+
+
