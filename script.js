@@ -5,7 +5,7 @@ function converteC() {
 	let fahrenheit = (c*(9/5))+32;
 
 	let resC = window.document.getElementById("resultC")
-	resC.innerHTML = fahrenheit.toFixed(2) + "ºF"; 
+	resC.innerHTML = fahrenheit.toFixed(2) + " ºF"; 
 }
 
 function converteF() {
@@ -14,7 +14,7 @@ function converteF() {
 	let celsius = (f-32)*(5/9);
 
 	let resF = window.document.getElementById("resultF")
-	resF.innerHTML = celsius.toFixed(2) + "ºC"; 
+	resF.innerHTML = celsius.toFixed(2) + " ºC"; 
 }
 
 /*======================================================*/
@@ -25,7 +25,7 @@ function circunf() {
 	let circunf = (2*3.14)*r;
 
 	let resp = window.document.getElementById("resultCircunf")
-	resp.innerHTML = circunf.toFixed(2) + " de circunferência"; 
+	resp.innerHTML = circunf.toFixed(2) + " de Circunferência"; 
 }
 
 function area() {
@@ -34,7 +34,7 @@ function area() {
 	let area = 3.14*(r*r);
 
 	let resp = window.document.getElementById("resultArea")
-	resp.innerHTML = area.toFixed(2) + " de área"; 
+	resp.innerHTML = area.toFixed(2) + " de Área"; 
 }
 
 /*======================================================*/
@@ -53,7 +53,7 @@ function inverter() {
 	}
 
 	let resp = window.document.getElementById("inversoValor")
-	resp.innerHTML = inv; 
+	resp.innerHTML = "O seu inverso é " + inv; 
 }
 
 /*======================================================*/

@@ -6,10 +6,10 @@
 }
 
 .textos{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration-style: double;
-    text-decoration: solid;
-    color: #ffffff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration-style: double;
+  text-decoration: solid;
+  color: #ffffff;
 }
 
 .textospt{
@@ -25,6 +25,10 @@
 
 .direita{
     float: right;
+}
+
+.centro{
+  float:inline-end;
 }
 
 .esquerda{
@@ -53,6 +57,10 @@ li{
 
 .tab{
   background-color: #9a9797;
+}
+
+.caixabca{
+  background-color: #ffffff;
 }
 
 /* ========== Menu Dropdown ==========   */

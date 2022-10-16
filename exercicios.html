@@ -65,69 +65,87 @@
 			</div>
 			<div class="row marcador align-items-center">
 				<div class="col mx-auto text-center">
-					
-					<div class="conversorTemperatura">
-						<p>CONVERSOR DE TEMPERATURA - CELSIUS PARA FAHRENHEIT</p>
-							<label for="Temperatura em Celsius">Temperatura em Celsius:</label>
-								<input id="campoTempC">
-								<button type="button" onclick="converteC()">Converter</button>
-								<span>Resultado: </span>
-								<span id="resultC"></span>
-							<hr>
-						<p>CONVERSOR DE TEMPERATURA - FAHRENHEIT PARA CELSIUS</p>
-							<label for="Temperatura em Fahrenheit">Temperatura em Fahrenheit:</label>
-								<input id="campoTempF">
-								<button type="button" onclick="converteF()">Converter</button>
-								<span>Resultado: </span>
-								<span id="resultF"></span>
-						<hr>
+					<div class="d-flex justify-content-center card-deck">
+  						<div class="col-md-3 card textospt"><hr>
+							<p><img src="imagens/termometro50x91.png"></p>
+							<div class="card-body">
+								<p>CONVERSOR DE TEMPERATURA</p>
+								<hr><p>CELSIUS PARA FAHRENHEIT</p><hr>
+									<label for="Temperatura em Celsius">Temperatura em Celsius:</label>
+										<input id="campoTempC"><br>
+										<button type="button" onclick="converteC()">Converter</button>
+										<p id="resultC"><span> ºF</span></p>
+									<hr>
+							</div>
+						</div>
+						<div class="col-md-3 card textospt"><hr>
+							<p><img src="imagens/termometro50x91.png"></p>
+							<div class="card-body">
+								<p>CONVERSOR DE TEMPERATURA</p>
+								<hr><p>FAHRENHEIT PARA CELSIUS</p><hr>
+									<label for="Temperatura em Fahrenheit">Temperatura em Fahrenheit:</label>
+										<input id="campoTempF"><br>
+										<button type="button" onclick="converteF()">Converter</button>
+										<p id="resultF"><span> ºC</span></p>
+									<hr>
+							</div>
+						</div>
 					</div>
 
-					<div class="raioCirculo">
-						<p>CALCULAR A CIRCUNFERÊNCIA DE UM CIRCULO A PARTIR DO RAIO</p>
-							<label for="Raio do circulo">Digite o RAIO do Circulo:</label>
+					<br>
+
+					<div class="d-flex justify-content-center card-deck">
+						<div class="col-md-3 card textospt"><hr>
+						<p><img src="imagens/circunf100x104.png"></p>
+						  	<div class="card-body">
+								<p>CALCULAR A CIRCUNFERÊNCIA DE UM CIRCULO A PARTIR DO RAIO</p>
+								<label for="Raio do circulo">Digite o RAIO do Circulo:</label>
 								<input id="campoRaCirc">
 								<button type="button" onclick="circunf()">Calcular</button>
-								<span>Resultado: </span>
-								<span id="resultCircunf"></span>
-							<hr>
-						<p>CALCULAR A ÁREA DE UM CIRCULO A PARTIR DO RAIO</p>
-							<label for="Area do circulo">Digite o RAIO do Circulo:</label>
-								<input id="campoArCirc">
-								<button type="button" onclick="area()">Calcular</button>
-								<span>Resultado: </span>
-								<span id="resultArea"></span>
-							<hr>
+								<p id="resultCircunf"><span>Circunferência: </span></p>
+								<hr>
+							</div>
+						</div>
+						<div class="col-md-3 card textospt"><hr>
+							<p><img src="imagens/circunf100x104.png"></p>
+								<div class="card-body">
+									<p>CALCULAR A ÁREA DE UM CIRCULO A PARTIR DO RAIO</p><br>
+									<label for="Area do circulo">Digite o RAIO do Circulo:</label>
+									<input id="campoArCirc">
+									<button type="button" onclick="area()">Calcular</button>
+									<p id="resultArea"><span>Área: </span></p>
+									<hr>
+								</div>
+						</div>
 					</div>
 
-					<div class="inverso">
-						<p>DIGITE UM VALOR E VEJA O INVERSO DELE</p>
-							<label for="Valor">Digite um valor:</label>
+					<br>
+
+					<div class="d-flex justify-content-center card-deck">
+						<div class="col-md-3 card textospt"><hr>
+						<p><img src="imagens/infinito100x62.png"></p>
+						  	<div class="card-body">
+								<p>DIGITE UM NÚMERO E VEJA O INVERSO DELE</p>
+								<label for="Valor">Digite um número:</label>
 								<input id="campoValor">
 								<button type="button" onclick="inverter()">Inverter</button>
-								<span>Número Invertido: </span>
-								<span id="inversoValor"></span>
-							<hr>
+								<p id="inversoValor"><span>Número Invertido: </span></p>
+								<hr>
+							</div>
+						</div>
+						<div class="col-md-3 card textospt"><hr>
+						<p><img src="imagens/palindromo100x101.png"></p>
+						  	<div class="card-body">
+								<p>DIGITE UM TEXTO E CONFIRA SE É UM PALÍNDROMO</p>
+									<label for="Texto">Digite um texto:</label>
+										<input id="campoTxt">
+										<button type="button" onclick="palindromo()">Conferir</button>
+										<p id="respPalin"><span>Resultado: </span></p>
+										<hr>
+							</div>
+						</div>
 					</div>
-
-					<div class="palindromo">
-						<p>DIGITE UM TEXTO E CONFIRA SE É UM PALÍNDROMO</p>
-							<label for="Texto">Digite um texto:</label>
-								<input id="campoTxt">
-								<button type="button" onclick="palindromo()">Conferir</button>
-								<span>Resultado: </span>
-								<span id="respPalin"></span>
-							<hr>
-					</div>
-				</div>
-			</div>
-			<div class="row marcador align-items-center">
-				<div class="col mx-auto text-center">
-				</div>
-				<div class="col mx-auto text-center">
-
-				</div>
-				<div class="col mx-auto text-center">
+					<br>
 				</div>
 			</div>
 		</section><br>

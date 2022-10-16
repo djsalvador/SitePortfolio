@@ -2,43 +2,46 @@
 const btnCid = document.getElementById('btnCid')
    
 btnCid.addEventListener('click', function () {
-    document.getElementById("result").innerHTML = "";
     clima(document.getElementById('cid').value);
+    document.getElementById("resultp1").innerHTML = "";
+    document.getElementById("resultp2").innerHTML = "";
+    document.getElementById("resultp3").innerHTML = "";
+    document.getElementById("resultp4").innerHTML = "";
+    document.getElementById("error").innerHTML = "";
 })
 
 function clima(cid) {
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cid},BR&APPID=ca7f11d79102681aa6822e5330961dc6`)
-    .then((response) => {
-        return response.json()
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cid},BR&APPID=ca7f11d79102681aa6822e5330961dc6`)
+        .then((response) => {
+            return response.json()
         })
-    .then((res) => {
-        console.log(res)
+        .then((res) => {
+            console.log(res)
+            let p1 = document.createElement('p')
+            let p2 = document.createElement('p')
+            let p3 = document.createElement('p')
+            let p4 = document.createElement('p')
 
-        let p1 = document.createElement('p')
-        let p2 = document.createElement('p')
-        let p3 = document.createElement('p')
-        let p4 = document.createElement('p')
+            let situacao = document.createTextNode(` ${res.weather[0].description}`);
+            p1.appendChild(situacao);
 
-        let situacao = document.createTextNode(`Situação Atual: ${res.weather[0].description}`);
-        p1.appendChild(situacao);
+            let temp = document.createTextNode(` ${res.main.temp}`);
+            p2.appendChild(temp);
 
-        let temp = document.createTextNode(`Temperatura: ${res.main.temp}`);
-        p2.appendChild(temp);
+            let umidade = document.createTextNode(` ${res.main.humidity}`)
+            p3.appendChild(umidade)
 
-        let umidade = document.createTextNode(`Umidade: ${res.main.humidity}`)
-        p3.appendChild(umidade)
+            let velocVento = document.createTextNode(` ${res.wind.speed}`)
+            p4.appendChild(velocVento)
 
-        let velocVento = document.createTextNode(`Velocidade do Vento: ${res.wind.speed}`)
-        p4.appendChild(velocVento)
-
-        document.getElementById('result').appendChild(p1)
-        document.getElementById('result').appendChild(p2)
-        document.getElementById('result').appendChild(p3)
-        document.getElementById('result').appendChild(p4)
-    })
-    .catch(error => {
-        document.getElementById('error').appendChild(document.createTextNode("Algum erro aconteceu. Refaça sua busca."))
-    })
-  }
+            document.getElementById('resultp1').appendChild(p1)
+            document.getElementById('resultp2').appendChild(p2)
+            document.getElementById('resultp3').appendChild(p3)
+            document.getElementById('resultp4').appendChild(p4)
+        })
+        .catch(error => {
+            document.getElementById('error').appendChild(document.createTextNode("Algum erro aconteceu. Refaça sua busca. Digite somente o nome da cidade."))
+        })
+}
 
   /*===================*/

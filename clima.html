@@ -56,21 +56,30 @@
 	</header>
 	<main>
         <section class="container"><br>
-            <div class="row marcador">
-                <div class="col-sm col-md col-lg col-xl text-center">
-					<picture>
-                        <source media="(max-width:300px)"  srcset="imagens/clima-75.png" type="image/png">
-						<source media="(max-width:500px)" srcset="imagens/clima-150.png" type="image/png">
-						<source media="(max-width:1200px)" srcset="imagens/clima-300.png" type="image/png">
-						<img class="img-responsive" src="imagens/clima.png" alt="Imagem Flexivel">
-                    </picture><br><br>
-                        <p class="textos">Digite a Cidade:</p>
-                        <input id="cid" type="text" placeholder="Cidade"><br>
-                        <button id="btnCid" type="submit" class="mt-2 btn btn-primary">Ver clima da Cidade</button>
-                        <p id="error" class="textos text-danger"></p>
-                </div>
-                <div id="result" class="textos text-center"></div>
-            </div>
+			<div class="card col mx-auto text-center textospt" style="width: 22em">
+				<picture>
+					<source media="(max-width:300px)"  srcset="imagens/clima-75.png" type="image/png">
+					<source media="(max-width:500px)" srcset="imagens/clima-150.png" type="image/png">
+					<source media="(max-width:1200px)" srcset="imagens/clima-300.png" type="image/png">
+					<img class="img-responsive" src="imagens/clima.png" alt="Imagem Flexivel">
+				</picture><br><br>
+				<div class="card-body">
+				  <p class="card-text">Digite uma Cidade para saber as informações de meteorologia.</p>
+				</div>
+				<ul class="list-group list-group-flush">
+				  <li class="list-group-item"><input id="cid" type="text" placeholder="Cidade:"><br></li>
+				  <button id="btnCid" type="button" class="mt-2 btn btn-primary">Ver clima da Cidade</button><hr>
+				  <p id="error" class="textos text-danger"></p>
+				  <li class="tab">SITUAÇÃO ATUAL</li>
+				  <div id="resultp1" class="textospt text-center"></div>
+				  <li class="tab">TEMPERATURA</li>
+				  <div id="resultp2" class="textospt text-center"></div>
+				  <li class="tab">UMIDADE</li>
+				  <div id="resultp3" class="textospt text-center"></div>
+				  <li class="tab">VELOCIDADE DO VENTO</li>
+				  <div id="resultp4" class="textospt text-center"></div>
+				</ul>
+			</div>
         </section><br>
     </main>
 	<footer>
