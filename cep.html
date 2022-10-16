@@ -58,31 +58,30 @@
 	</header>
 	<main>
         <section class="container"><br>
-            <div class="row marcador align-items-center">
-                <div class="col mx-auto text-center">			
-                </div>
-            </div>
-            <div class="row marcador align-items-center">
-                <div class="col mx-auto text-center textos">
-                    <picture>
-                        <source media="(max-width:500px)"  srcset="imagens/maps-75.png" type="image/png">
-						<source media="(max-width:800px)" srcset="imagens/maps-150.png" type="image/png">
-						<source media="(max-width:1200px)" srcset="imagens/maps-300.png" type="image/png">
-						<img class="img-responsive" src="imagens/maps-300.png" alt="Imagem Flexivel">
-                    </picture>
-                        <p class="textos">Buscar Dados do seguinte CEP:</p>
-                        <input id="cep" type="text" placeholder="00000-000"><br>
-                        <button id="btnBusc" type="button" class="mt-2 btn btn-primary">Buscar</button>
-                        <p id="error" class="text-danger"></p>
-                </div>
-                <div id="result" class="textos text-center"></div>
-				
-				<div class="col mx-auto text-center textos">
-					<input class="mt-2 btn btn-primary" type="button" value="Gerar Mapa" onclick="codeAddress()">
-					<div class="col mx-auto text-center textos" id="map" style="width: 320px; height: 480px;">:</div>
+			<div class="card col mx-auto text-center textospt" style="width: 18em">
+				<picture>
+					<source media="(max-width:500px)"  srcset="imagens/maps-75.png" type="image/png">
+					<source media="(max-width:800px)" srcset="imagens/maps-150.png" type="image/png">
+					<source media="(max-width:1200px)" srcset="imagens/maps-300.png" type="image/png">
+					<img class="img-responsive card-img-top" src="imagens/maps-300.png" alt="Imagem Flexivel">
+				</picture>
+
+				<div class="card-body">
+				  <p class="card-text">Digite um CEP para obter as informações.</p>
 				</div>
-  		
-            </div>
+				<ul class="list-group list-group-flush">
+				  <li class="list-group-item"><input id="cep" type="text" placeholder="00000-000"><br></li>
+				  <button id="btnBusc" type="button" class="mt-2 btn btn-primary">Buscar</button><hr>
+				  <li class="tab">LOGRADOURO</li>
+				  <div id="resultp1" class="textospt text-center"></div>
+				  <li class="tab">BAIRRO</li>
+				  <div id="resultp2" class="textospt text-center"></div>
+				  <li class="tab">CIDADE</li>
+				  <div id="resultp3" class="textospt text-center"></div>
+				  <li class="tab">ESTADO</li>
+				  <div id="resultp4" class="textospt text-center"></div>
+				</ul>
+			  </div>
         </section><br>
     </main>
 	<footer>

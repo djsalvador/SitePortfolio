@@ -12,6 +12,13 @@
     color: #ffffff;
 }
 
+.textospt{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration-style: double;
+  text-decoration: solid;
+  color: #000000;
+}
+
 .imagem{
     height: 5%;
 }
@@ -36,13 +43,19 @@
     padding: 1em;
 }
 
-.caixas{
-  border-color: aqua;
-  border-style: double;
+ul{
+  padding-bottom: 1em;
+}
+
+li{
+  list-style: none;
+}
+
+.tab{
+  background-color: #9a9797;
 }
 
 /* ========== Menu Dropdown ==========   */
-
 .dropbtn {
     background-color: #343a40;
     color: white;
