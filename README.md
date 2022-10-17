@@ -11,4 +11,5 @@ Possui seções com:
 - API consumindo dados da internet (JSON)
 - API consumindo dados locais (CSV e JSON)
 - outros...
+
 OBSERVAÇÃO: (projeto em andamento e sendo atualizado constantemente)
