@@ -3,6 +3,7 @@ Projeto pessoal e trabalho de curso usando:
 - CSS
 - Bootstrap
 - Javascript
+
 Possui seções com:
 - Informações básicas
 - Formulários
