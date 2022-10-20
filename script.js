@@ -18,7 +18,7 @@ function converteF() {
 }
 
 /*======================================================*/
-/* ===== CÁLCULO DE CIRCUNFERÊNCIA E ÁREA DE CIRCULO =====*/
+/* ===== CÁLCULO DE CIRCUNFERÊNCIA E ÁREA DE UM CIRCULO =====*/
 function circunf() {
 	let r = document.getElementById("campoRaCirc").value;
 	
@@ -115,18 +115,21 @@ function palindromo() {
 			
 			if((sump%2)==0){
 				callbackSucesso();
-				myRespSoma(sump);
 			}else{
 				callBackError();
 			}
   	}
 
 	function callbackSucesso(){
-		console.log("Resultado da soma é par. " + sump)
+		resultP = ("Resultado: " + sump + " é par.");
+		console.log("Resultado: " + sump + " é par.");
+		myRespSoma(resultP);
 	}
 
 	function callBackError(){
-		console.log("Resultado da soma é ímpar. " + sump )
+		resultP = ("Resultado: " + sump + " é ímpar.");
+		console.log("Resultado: " + sump + " é ímpar.");
+		myRespSoma(resultP);
 	}
 
 	function myRespSoma(resultP) {

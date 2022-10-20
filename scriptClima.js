@@ -11,7 +11,7 @@ btnCid.addEventListener('click', function () {
 })
 
 function clima(cid) {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cid},BR&APPID=(AQUI-INSERIR-TOKEN-PARA ACESSO)`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cid},BR&APPID={inserir-key}`)
         .then((response) => {
             return response.json()
         })
