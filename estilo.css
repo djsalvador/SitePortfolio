@@ -35,6 +35,11 @@
     float: inline-start;
 }
 
+/* botao cep no formulario  */
+#btnBuscCep{
+  align-self: center;
+}
+
 /* CALENDARIO */
 .tabela{
     color: #ffffff;
@@ -61,6 +66,10 @@ li{
 
 .caixabca{
   background-color: #ffffff;
+}
+
+.inline input{
+  width: 60px;
 }
 
 /* ========== Menu Dropdown ==========   */

@@ -1,4 +1,4 @@
-/* CEP  */
+/* ===== CEP (BUSCANDO PELO SITE DO APICEP)=====  */
 const btnBusc = document.getElementById('btnBusc')
 
 btnBusc.addEventListener('click', function () {
@@ -43,3 +43,4 @@ fetch(`https://cdn.apicep.com/file/apicep/${cep}.json`)
     document.getElementById('error').appendChild(document.createTextNode("Algum erro aconteceu. Refaça sua pesquisa."))
   })
 }
+/* ===== CEP =====  */

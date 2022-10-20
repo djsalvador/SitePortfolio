@@ -9,7 +9,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel=stylesheet type="text/css" href="estilo.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<title>Portfólios do Salvador</title>
 	</head>
@@ -68,80 +67,92 @@
 				</div>
 			</div>
             <!-- FORMULÁRIOS -->
-			<div class="row marcador align-items-center">
-				<div class="col mx-auto text-center">
-				</div>
-				<div class="col mx-auto text-center">
+			<div class="container row marcador align-items-center">
+				<div class="col-md-4 mx-auto text-center">
 					<form>
                         <!-- FORMULÁRIO NOME -->
                         <div class="form-group">
                             <div class="form-row">
-                                <div class="col">
+                                <div class="col-sm">
                                   <input type="text" class="form-control" placeholder="Nome">
                                 </div>
-                                <div class="col">
+                                <div class="col-sm">
                                   <input type="text" class="form-control" placeholder="Sobrenome">
                                 </div>
                             </div>
                         </div>
-                        <!-- FORMULÁRIO EMAIL e SENHA -->
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label for="inputEmail4"></label>
-                              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label for="inputPassword4"></label>
-                              <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
-                            </div>
-                        </div>
-                        <!-- FORMULÁRIO ENDEREÇO -->
+                        <!-- FORMULÁRIO ENDEREÇO e BAIRRO -->
                         <div class="form-group">
-                            <label for="inputAddress">Endereço Residencial</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Rua/Avenida/Alamenda">
-                        </div>
-                        <!-- FORMULÁRIO CIDADE -->
-                        <div class="form-group form-row">
-                            <div class="form-group col-md-12">
-                                <label for="inputCity">Cidade</label>
-                                <input type="text" class="form-control" id="inputCity" placeholder="Digite a Cidade">
+                            <div class="form-row">
+                                <div class="col-sm">
+                                    <label for="input Address">Endereço Residencial</label>
+                                    <input id="inputAddress" type="text" class="form-control" placeholder="Rua/Avenida/Alamenda">
+                                </div>
                             </div>
                         </div>
-                        <!-- FORMULÁRIO ESTADO COM POSSIBILIDADE DE ESCOLHA E CEP-->
-                        <div class="form-group form-row">
-                            <div class="col-md-6 offset-md-3">
-                                <label for="inputEstado">Estado</label>
-                                <select id="inputEstado" class="form-control">
-                                    <option selected>Clique para Escolher</option>
-                                    <option>AC</option>
-                                    <option>AM</option>
-                                    <option>AL</option>
-                                    <option>BA</option>
-                                    <option>CE</option>
-                                    <option>ES</option>
-                                    <option>GO</option>
-                                    <option>MA</option>
-                                    <option>MG</option>
-                                    <option>MS</option>
-                                    <option>MT</option>
-                                    <option>PA</option>
-                                    <option>PE</option>
-                                    <option>PB</option>
-                                    <option>PI</option>
-                                    <option>PR</option>
-                                    <option>RJ</option>
-                                    <option>RN</option>
-                                    <option>RR</option>
-                                    <option>RO</option>
-                                    <option>RS</option>
-                                    <option>SE</option>
-                                    <option>SC</option>
-                                    <option>SP</option>
-                                    <option>TO</option>
-                                </select>
-                                <div>
-                                    <label for="inputCEP">CEP</label>
-                                    <input type="text" class="form-control" id="inputCEP" placeholder="00.000-000">
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col-sm">
+                                    <label for="input Bairro">Bairro</label>
+                                    <input id="inputBairro" type="text" class="form-control" placeholder="Bairro">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FORMULÁRIO CIDADE e ESTADO -->
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col-sm-8">
+                                    <label for="input City">Cidade</label>
+                                    <input id="inputCity" type="text" class="form-control" placeholder="Cidade">
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="input Estado">Estado</label>
+                                    <select id="inputEstado" class="form-control">
+                                        <option selected>Escolher</option>
+                                        <option>AC</option>
+                                        <option>AM</option>
+                                        <option>AL</option>
+                                        <option>BA</option>
+                                        <option>CE</option>
+                                        <option>ES</option>
+                                        <option>GO</option>
+                                        <option>MA</option>
+                                        <option>MG</option>
+                                        <option>MS</option>
+                                        <option>MT</option>
+                                        <option>PA</option>
+                                        <option>PE</option>
+                                        <option>PB</option>
+                                        <option>PI</option>
+                                        <option>PR</option>
+                                        <option>RJ</option>
+                                        <option>RN</option>
+                                        <option>RR</option>
+                                        <option>RO</option>
+                                        <option>RS</option>
+                                        <option>SE</option>
+                                        <option>SC</option>
+                                        <option>SP</option>
+                                        <option>TO</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-row justify-content-center">
+                                <div class="col-sm-6">
+                                    <label for="CEP">CEP</label>
+                                        <input id="inputCEP" type="text" class="form-control" placeholder="00000000">
+                                        <button id="btnBuscCep" type="button" class="col-md-12 mt-2 btn btn-secondary">Preencher pelo CEP</button>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- FORMULÁRIO EMAIL -->
+                         <div class="form-group">
+                            <div class="form-row justify-content-center">
+                                <div class="col-sm-6">
+                                    <label for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                                 </div>
                             </div>
                         </div>
@@ -149,64 +160,87 @@
                         <button type="submit" class="btn btn-primary">Salvar</button><hr>
 
                         <!-- INSERIR ARQUIVO -->
-                        <div class="form-group"><br>
-                            <label for="exampleFormControlFile1">ANEXAR ARQUIVO</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <div class="form-group ">
+                            <div class="form-row ">
+                                <div class="col-sm-12">
+                                    <label for="exampleFormControlFile1">ANEXAR ARQUIVO</label>
+                                    <input type="file" class="form-control-file caixabca textospt" id="exampleFormControlFile1">
+                                </div>
+                            </div>
                         </div><br>
 
                         <!-- CHECK-BOX -->
-                        <div class="caixabca form-group form-check textospt">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Sou um CheckBox, clique em mim</label>
+                        <div class="form-group ">
+                            <div class="form-row ">
+                                <div class="col-sm-12 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Sou um CheckBox, clique em mim</label>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- RÁDIO SELECT PADRÃO-->
-                        <div class="form-group form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
-                            <label class="form-check-label" for="exampleRadios1">Radio padrão</label>
-                        </div>
-                        <!-- RÁDIO SELECT -->
-                        <div class="form-group form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
-                            <label class="form-check-label" for="exampleRadios2">Segundo radio</label>
+                        <!-- RÁDIO -->
+                        <div class="form-group ">
+                            <div class="form-row">
+                                <!-- RÁDIO SELECT PADRÃO-->
+                                <div class="col-sm-6 form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">Radio padrão</label>
+                                </div>
+                                <!-- RÁDIO SELECT -->
+                                <div class="col-sm-6 form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+                                    <label class="form-check-label" for="exampleRadios2">Segundo radio</label>
+                                </div>
+                            </div>
                         </div><br>
 
                         <!-- PESQUISA COM 2 ÍTENS e BOTÃO VOTAR -->
-                        <div class="caixabca textospt">
-                            <p>PESQUISA:<br>--------------------</p>
-                            <div class="form-check form-check-inline"><br>
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
-                                <label class="form-check-label" for="inlineRadio1">Bolsonaro</label>
+                        <div class="form-group ">
+                            <div class="form-row">
+                                <div class="col-sm-12 caixabca textospt">
+                                    <p>PESQUISA:<br>--------------------</p>
+                                    <div class="form-check form-check-inline"><br>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
+                                        <label class="form-check-label" for="inlineRadio1">Bolsonaro</label>
+                                    </div>
+                                    <div class="form-check form-check-inline"><br>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
+                                        <label class="form-check-label" for="inlineRadio2">Luladrão</label>
+                                    </div>
+                                    <br><button type="submit" class="btn btn-primary">VOTAR</button><br><br>
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline"><br>
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
-                                <label class="form-check-label" for="inlineRadio2">Luladrão</label>
-                            </div>
-                            <br><button type="submit" class="btn btn-primary">VOTAR</button><br><br>
                         </div><br>
 
-                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">PREFERÊNCIA IDEOLÓGICA</label>
-                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                                <option selected>Escolher</option>
-                                <option value="1">Direita</option>
-                                <option value="2">Esquerda</option>
-                                <option value="3">Centrão</option>
-                            </select>
-
+                        <div class="form-group ">
+                            <div class="form-row">
+                                <div class="col-sm-12">
+                                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">PREFERÊNCIA IDEOLÓGICA</label>
+                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                            <option selected>Escolher</option>
+                                            <option value="1">Direita</option>
+                                            <option value="2">Esquerda</option>
+                                            <option value="3">Centrão</option>
+                                        </select>
+                                </div>
+                            </div>
                             <div class="custom-control custom-checkbox my-1 mr-sm-2">
                                 <input type="checkbox" class="custom-control-input" id="customControlInline">
                                 <label class="custom-control-label" for="customControlInline">Lembrar preferências</label>
-                            </div><br>
-
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Deixe aqui sua mensagem</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
+                        </div><br>
 
-                        <button type="submit" class="btn btn-primary my-1">Enviar</button>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col-sm-12">
+                                    <label for="exampleFormControlTextarea1">Deixe aqui sua mensagem</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                             <button type="submit" class="btn btn-primary my-1">Enviar</button>
+                        </div>
                     </form>
-				</div>
-				<div class="col mx-auto text-center">
 				</div>
 			</div>
 		</section><br>
@@ -243,8 +277,10 @@
 	</footer>
 		
 	<!-- JAVASCRIPT / JQUERY / POPPER do BOOTSTRAP -->
+    <script src="script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

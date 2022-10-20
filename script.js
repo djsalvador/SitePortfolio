@@ -1,4 +1,4 @@
-
+/* ===== CONVERSOR DE TEMPERATURA =====*/
 function converteC() {
 	let c = document.getElementById("campoTempC").value;
 	
@@ -18,7 +18,7 @@ function converteF() {
 }
 
 /*======================================================*/
-
+/* ===== CÁLCULO DE CIRCUNFERÊNCIA E ÁREA DE CIRCULO =====*/
 function circunf() {
 	let r = document.getElementById("campoRaCirc").value;
 	
@@ -38,7 +38,7 @@ function area() {
 }
 
 /*======================================================*/
-
+/* ===== INVERTENDO UM VALOR NUMÉRICO =====*/
 function inverter() {
 	let v = document.getElementById("campoValor").value;
 	
@@ -57,7 +57,7 @@ function inverter() {
 }
 
 /*======================================================*/
-
+/* ===== VERIFICANDO SE É PALÍNDROMO =====*/
 function palindromo() {
 	let txt = document.getElementById("campoTxt").value;
 	let i = 0;
@@ -81,3 +81,78 @@ function palindromo() {
 }
 
 /*======================================================*/
+/* ===== CÁLCULO DE SOMA =====*/
+	function soma(){
+		let v1 = document.getElementById("valor1").value;
+		let v2 = document.getElementById("valor2").value;
+  
+		myCalculadora(v1, v2, myResposta);
+  	}
+
+  	function myCalculadora(num1, num2, myCallback) {
+		let sum = parseInt(num1) + parseInt(num2);
+		myCallback("Resposta: " + sum);
+  	}
+
+  	function myResposta(something) {
+		document.getElementById("respSoma").innerHTML = something;
+  	}
+
+  /*======================================================*/
+  /* ===== CÁLCULO DE SOMA E VERIFICA SE É PAR =====*/
+
+  	var sump = 0;
+
+	function somaPar(){
+		let vp1 = document.getElementById("valorP1").value;
+		let vp2 = document.getElementById("valorP2").value;
+  
+		myCalcSoma(vp1, vp2);
+	}
+
+  	function myCalcSoma(vp1, vp2) {
+		sump = parseInt(vp1) + parseInt(vp2);
+			
+			if((sump%2)==0){
+				callbackSucesso();
+				myRespSoma(sump);
+			}else{
+				callBackError();
+			}
+  	}
+
+	function callbackSucesso(){
+		console.log("Resultado da soma é par. " + sump)
+	}
+
+	function callBackError(){
+		console.log("Resultado da soma é ímpar. " + sump )
+	}
+
+	function myRespSoma(resultP) {
+		document.getElementById("respSomaPar").innerHTML = resultP;
+	}
+
+	/* ===== CEP (BUSCANDO PELO SITE DO VIACEP)=====  */
+const btnBuscCep = document.getElementById('btnBuscCep');
+
+btnBuscCep.addEventListener('click', function() {
+  buscarCepForm(document.getElementById('inputCEP').value);
+})
+
+function buscarCepForm(inputCEP) {
+      fetch(`https://viacep.com.br/ws/${inputCEP}/json/`)
+      .then( response => response.json())
+      .then( resp => {
+          	document.getElementById('inputAddress').value = resp.logradouro;
+            document.getElementById('inputBairro').value = resp.bairro;
+            document.getElementById('inputCity').value = resp.localidade;
+            document.getElementById('inputEstado').value = resp.uf;
+	  })
+  .catch(error => {
+    document.getElementById('error').appendChild(document.createTextNode("Algum erro aconteceu. Verifique o CEP."))
+  })
+}
+/* ===== CEP =====  */
+
+
