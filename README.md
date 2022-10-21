@@ -6,7 +6,7 @@ Projeto pessoal e trabalho de curso usando:
 
 Possui seções com:
 - Informações básicas
-- Formulários
+- Formulários (com preenchimento automático de endereço a partir de um CEP)
 - Script JS pra resolver cálculos e devolver em CARD
 - API consumindo dados da internet (JSON)
 - API consumindo dados locais (CSV e JSON)
