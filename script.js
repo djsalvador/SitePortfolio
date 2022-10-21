@@ -137,6 +137,13 @@ function palindromo() {
 	}
 
 	/* ===== CEP (BUSCANDO PELO SITE DO VIACEP)=====  */
+
+
+
+
+
+
+	
 const btnBuscCep = document.getElementById('btnBuscCep');
 
 btnBuscCep.addEventListener('click', function() {
