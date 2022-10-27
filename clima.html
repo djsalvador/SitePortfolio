@@ -71,19 +71,27 @@
 				  <p class="card-text">Digite uma Cidade para saber as informações de meteorologia.</p>
 				</div>
 				<ul class="list-group list-group-flush">
-				  <li class="list-group-item"><input id="cid" type="text" placeholder="Cidade:"><br></li>
-				  <button id="btnCid" type="button" class="mt-2 btn btn-primary">Ver clima da Cidade</button>
-				  <p id="error" class="textos text-danger"></p>
-				  <li class="tab">SITUAÇÃO ATUAL</li>
-				  <div id="resultp1" class="textospt text-center"></div>
-				  <li class="tab">TEMPERATURA</li>
-				  <div id="resultp2" class="textospt text-center"></div>
-				  <li class="tab">UMIDADE</li>
-				  <div id="resultp3" class="textospt text-center"></div>
-				  <li class="tab">VELOCIDADE DO VENTO</li>
-				  <div id="resultp4" class="textospt text-center"></div>
+					<li class="list-group-item"><input id="cid" type="text" placeholder="Cidade:"><br></li>
+						<button id="btnCid" type="button" class="mt-2 btn btn-primary">Ver clima da Cidade</button>
+					<p id="error" class="textos text-danger"></p>
+					<p id="errorMap" class="textos text-danger"></p>
+					<li class="tab">SITUAÇÃO ATUAL</li>
+						<div id="resultp1" class="textospt text-center"></div>
+					<li class="tab">TEMPERATURA</li>
+						<div id="resultp2" class="textospt text-center"></div>
+					<li class="tab">UMIDADE</li>
+						<div id="resultp3" class="textospt text-center"></div>
+					<li class="tab">VELOCIDADE DO VENTO</li>
+						<div id="resultp4" class="textospt text-center"></div>
+					<li class="tab">NASCER DO SOL</li>
+						<div id="resultp5" class="textospt text-center"></div>
+					<li class="tab">POR DO SOL</li>
+				  		<div id="resultp6" class="textospt text-center"></div>
+					<li class="tab">IMAGEM DE SATÉLITE (BRASIL) </li>
+						<div class="card col mx-auto card-body textospt text-center"><img src="//s3.cptec.inpe.br/grafico/Satelite/goes16/AMS/clientes/imagem.jpg"> </div>
 				</ul>
 			</div>
+			
         </section><br>
     </main>
 	<footer>
@@ -118,7 +126,6 @@
 	</footer>
 		
 	<!-- JAVASCRIPT / JQUERY / POPPER do BOOTSTRAP -->
-	<script src="script.js"></script>
     <script src="scriptClima.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

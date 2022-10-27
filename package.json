@@ -1,0 +1,22 @@
+{
+  "name": "siteportfolio",
+  "version": "1.0.0",
+  "description": "Projeto pessoal e trabalho de curso usando:\r - HTML\r - CSS\r - Bootstrap\r - Javascript",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djsalvador/SitePortfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djsalvador/SitePortfolio/issues"
+  },
+  "homepage": "https://github.com/djsalvador/SitePortfolio#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
