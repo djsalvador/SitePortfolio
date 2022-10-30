@@ -3,14 +3,12 @@ const btnCid = document.getElementById('btnCid')
    
 btnCid.addEventListener('click', function() {
     clima(document.getElementById('cid').value);
-    mapa();
     document.getElementById("resultp1").innerHTML = "";
     document.getElementById("resultp2").innerHTML = "";
     document.getElementById("resultp3").innerHTML = "";
     document.getElementById("resultp4").innerHTML = "";
     document.getElementById("resultp5").innerHTML = "";
     document.getElementById("resultp6").innerHTML = "";
-    document.getElementById("resultp7").innerHTML = "";
     document.getElementById("error").innerHTML = "";
 })
 
@@ -28,7 +26,7 @@ function clima(cid) {
             let p5 = document.createElement('p')
             let p6 = document.createElement('p')
 
-            let situacao = document.createTextNode(` ${res.weather[0].description}`);
+            let situacao = document.createTextNode(`${res.weather[0].description}`);
             p1.appendChild(situacao);
 
             let temp = document.createTextNode(`${res.main.temp} ºC`);

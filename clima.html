@@ -59,39 +59,46 @@
 		</nav>
 	</header>
 	<main>
-        <section class="container"><br>
-			<div class="card col mx-auto text-center textospt" style="width: 22em">
-				<picture>
-					<source media="(max-width:250px)" srcset="imagens/clima-75.png" type="image/png">
-					<source media="(max-width:400px)" srcset="imagens/clima-150.png" type="image/png">
-					<source media="(max-width:1000px)" srcset="imagens/clima-300.png" type="image/png">
-					<img class="img-responsive" src="imagens/clima.png" alt="Imagem Flexivel">
-				</picture><br><br>
-				<div class="card-body">
-				  <p class="card-text">Digite uma Cidade para saber as informações de meteorologia.</p>
+        <section><br>
+			<div class="container" style="width: 22em">
+				<div class="row">
+					<div class="card col-sm text-center textospt">
+						<picture>
+							<source media="(max-width:250px)" srcset="imagens/clima-75.png" type="image/png">
+							<source media="(max-width:400px)" srcset="imagens/clima-150.png" type="image/png">
+							<source media="(max-width:1000px)" srcset="imagens/clima-300.png" type="image/png">
+							<img class="img-responsive" src="imagens/clima.png" alt="Imagem Flexivel">
+						</picture><br><br>
+						<div class="card-body">
+						<p class="card-text">Digite uma Cidade para saber as informações de meteorologia.</p>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><input id="cid" type="text" placeholder="Cidade:"><br></li>
+								<button id="btnCid" type="button" class="mt-2 btn btn-primary">Ver clima da Cidade</button>
+							<p id="error" class="textos text-danger"></p>
+							<p id="errorMap" class="textos text-danger"></p>
+							<li class="tab">SITUAÇÃO ATUAL</li>
+								<div id="resultp1" class="textospt text-center"></div>
+							<li class="tab">TEMPERATURA</li>
+								<div id="resultp2" class="textospt text-center"></div>
+							<li class="tab">UMIDADE</li>
+								<div id="resultp3" class="textospt text-center"></div>
+							<li class="tab">VELOCIDADE DO VENTO</li>
+								<div id="resultp4" class="textospt text-center"></div>
+							<li class="tab">NASCER DO SOL</li>
+								<div id="resultp5" class="textospt text-center"></div>
+							<li class="tab">POR DO SOL</li>
+								<div id="resultp6" class="textospt text-center"></div>
+						</ul>
+					</div>
 				</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item"><input id="cid" type="text" placeholder="Cidade:"><br></li>
-						<button id="btnCid" type="button" class="mt-2 btn btn-primary">Ver clima da Cidade</button>
-					<p id="error" class="textos text-danger"></p>
-					<p id="errorMap" class="textos text-danger"></p>
-					<li class="tab">SITUAÇÃO ATUAL</li>
-						<div id="resultp1" class="textospt text-center"></div>
-					<li class="tab">TEMPERATURA</li>
-						<div id="resultp2" class="textospt text-center"></div>
-					<li class="tab">UMIDADE</li>
-						<div id="resultp3" class="textospt text-center"></div>
-					<li class="tab">VELOCIDADE DO VENTO</li>
-						<div id="resultp4" class="textospt text-center"></div>
-					<li class="tab">NASCER DO SOL</li>
-						<div id="resultp5" class="textospt text-center"></div>
-					<li class="tab">POR DO SOL</li>
-				  		<div id="resultp6" class="textospt text-center"></div>
-					<li class="tab">IMAGEM DE SATÉLITE (BRASIL) </li>
-						<div class="card col mx-auto card-body textospt text-center"><img src="//s3.cptec.inpe.br/grafico/Satelite/goes16/AMS/clientes/imagem.jpg"> </div>
-				</ul>
-			</div>
-			
+				<div class="row">
+					<div class="card col-sm text-center textospt">
+						<p>IMAGEM DE SATÉLITE DO DIA<br>(AMÉRICA DO SUL)</p>
+						<div><a class="card col mx-auto card-body" href="https://ciram.epagri.sc.gov.br/ciram_arquivos/meteorologia/satelite/animationzoom.gif" target="_blank"><img src="https://ciram.epagri.sc.gov.br/ciram_arquivos/meteorologia/satelite/animationzoom.gif"></a></div>
+					</div>
+				</div>
+			</div>	
         </section><br>
     </main>
 	<footer>
