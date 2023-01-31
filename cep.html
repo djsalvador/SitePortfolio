@@ -10,8 +10,6 @@
 		<link rel=stylesheet type="text/css" href="estilo.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<script src="script.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 		<title>Portfólios do Salvador</title>
 	</head>
 <body class="background">
@@ -61,33 +59,42 @@
 		</nav>
 	</header>
 	<main>
-        <section class="container"><br>
-			<div class="card col mx-auto text-center textospt" style="width: 18em">
-				<picture>
-					<source media="(max-width:300px)"  srcset="imagens/maps-150.png" type="image/png">
-					<source media="(max-width:1000px)" srcset="imagens/maps-300.png" type="image/png">
-					<img class="img-responsive card-img-top" src="imagens/maps-300.png" alt="Imagem Flexivel">
-				</picture>
-				<div class="card-body">
-				  <p class="card-text">Digite um CEP para obter as informações.</p>
+        <section>
+			<div class="container" style="width: 22em"><br>
+				<div class="row">
+					<div class="card col-sm text-center textospt">
+						<picture>
+							<source media="(max-width:300px)"  srcset="imagens/maps-150.png" type="image/png">
+							<source media="(max-width:1000px)" srcset="imagens/maps-300.png" type="image/png">
+							<img class="img-responsive card-img-top" src="imagens/maps-300.png" alt="Imagem Flexivel">
+						</picture>
+						<div class="card-body">
+							<p class="card-text">Digite um CEP para obter as informações.</p>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<input id="cep" type="text" placeholder="00000-000"><br></li>
+								<button id="btnBusc" type="button" class="mt-2 btn btn-primary">Buscar</button>
+								<p id="error" class="textos text-danger"></p>
+							<li class="tab">LOGRADOURO</li>
+								<div id="resultp1" class="textospt text-center"></div>
+							<li class="tab">BAIRRO</li>
+								<div id="resultp2" class="textospt text-center"></div>
+							<li class="tab">CIDADE</li>
+								<div id="resultp3" class="textospt text-center"></div>
+							<li class="tab">ESTADO</li>
+								<div id="resultp4" class="textospt text-center"></div>
+							
+							<li class="tab">MAPA</li>
+								<div id="mapaCep" class="textospt text-center"></div>
+								<button id="btnBuscMapa" type="button" class="mt-2 btn btn-primary">VER MAPA</button>
+						</ul>
+					</div>
 				</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">
-						<input id="cep" type="text" placeholder="00000-000"><br></li>
-				  		<button id="btnBusc" type="button" class="mt-2 btn btn-primary">Buscar</button>
-				  		<p id="error" class="textos text-danger"></p>
-				  	<li class="tab">LOGRADOURO</li>
-						<div id="resultp1" class="textospt text-center"></div>
-				  	<li class="tab">BAIRRO</li>
-				  		<div id="resultp2" class="textospt text-center"></div>
-				  	<li class="tab">CIDADE</li>
-				  		<div id="resultp3" class="textospt text-center"></div>
-				  	<li class="tab">ESTADO</li>
-				  		<div id="resultp4" class="textospt text-center"></div>
-				</ul>
 			</div>
-        </section><br>
-    </main>
+     	</section><br>
+	</main>
+
 	<footer>
 		<div class="jumbotron jumbotron-fluid bg-dark p-4 mb-0">
 			<div class="row">
@@ -108,6 +115,7 @@
 				<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 					<div class="card bg-light border-0">
 						<div class="card-body text-center">
+							
 							<a href="https://www.linkedin.com/in/disneysalvador" target="_blank"><img width="7%" src="imagens/linkdin.png"></a>
 							<a href="https://github.com/djsalvador" target="_blank"><img width="10%" src="imagens/github.png"></a>
 							<a href="mailto:" target="_blank"><img width="7%" src="imagens/email.png"></a>
@@ -120,11 +128,7 @@
 	</footer>
 		
 	<!-- JAVASCRIPT / JQUERY / POPPER do BOOTSTRAP -->
-	<script src="script.js"></script>
     <script src="scriptCEP.js"></script>
-	<script src="gears_init.js"></script>
-	<script src="geo.js"></script>
-	<script src="http://maps.google.com/maps/api/js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
