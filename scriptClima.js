@@ -18,7 +18,6 @@ function clima(cid) {
             return response.json()
         })
         .then((res) => {
-            console.log(res)
             let p1 = document.createElement('p')
             let p2 = document.createElement('p')
             let p3 = document.createElement('p')
@@ -32,10 +31,10 @@ function clima(cid) {
             let temp = document.createTextNode(`${res.main.temp} ºC`);
             p2.appendChild(temp);
 
-            let umidade = document.createTextNode(`${res.main.humidity} %`)
-            p3.appendChild(umidade)
+            let umidade = document.createTextNode(`${res.main.humidity} %`);
+            p3.appendChild(umidade);
 
-            let velocVento = document.createTextNode(`${Math.round(res.wind.speed*3.6)} km/h`)
+            let velocVento = document.createTextNode(`${Math.round(res.wind.speed*3.6)} km/h`);
             p4.appendChild(velocVento);
 
             let nascerSolUTC = (`${res.sys.sunrise}`);
@@ -63,5 +62,3 @@ function clima(cid) {
             document.getElementById('error').appendChild(document.createTextNode("Algum erro aconteceu. Refaça sua busca. Digite somente o nome da cidade."))
         })
 }
-
-  /*===================*/
